@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: cornflowerblue;
+  div{
+    padding: 10px;
+  }
+  a{
+    margin-right: 15px;
+  }
+}
+.search{
+  button{
+    margin-left: 15px;
+  }
+ }
+.user{
+  display: flex;
+}
+
