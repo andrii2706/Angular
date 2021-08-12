@@ -1,5 +1,4 @@
 export interface IFilms {
-results:{
   id: number,
   original_title: string,
   overview: string,
@@ -15,7 +14,6 @@ results:{
   release_date: number,
   voute_count: number
 }
-}
 export interface ILinks {
 next: string,
   prev: string
@@ -24,6 +22,6 @@ next: string,
 export interface IFIlmsFull {
   links: ILinks,
   count: number,
-  data :IFilms[]
+  results :IFilms[]
 }
 

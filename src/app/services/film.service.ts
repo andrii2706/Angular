@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {IFilms} from "../interface/IFilms";
+import {IFilms, IFIlmsFull} from "../interface/IFilms";
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +13,8 @@ export class FilmService {
   constructor(
     private httpClient: HttpClient
   ) { }
-  getALlFilms():Observable<IFilms[]>{
-    return this.httpClient.get<IFilms[]>(this.urlALl)
+  getALlFilms():Observable<IFIlmsFull>{
+    return this.httpClient.get<IFIlmsFull>(this.urlALl)
   }
   // getFilmsByID(id:number) :Observable<IFilms>{
   //   return this.httpClient.get<IFilms>(this.url+ id +this.url2)
