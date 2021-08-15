@@ -14,13 +14,14 @@ export interface IFilms {
   release_date: number,
   voute_count: number
 }
-export interface ILinks {
-next: string,
-  prev: string
-}
+// export interface ILinks {
+// next: string,
+//   prev: string
+// }
 
 export interface IFIlmsFull {
-  links: ILinks,
+  // links: ILinks,
+  page:number
   count: number,
   results :IFilms[]
 }

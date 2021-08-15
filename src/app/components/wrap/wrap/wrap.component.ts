@@ -10,11 +10,11 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class WrapComponent implements OnInit {
 
 
-  films: IFilms[]
+  // films: IFilms[]
 
   constructor(
-    private  router:Router,
-    private activatedRouter: ActivatedRoute
+    // private  router:Router,
+    // private activatedRouter: ActivatedRoute
   ) { }
 
   ngOnInit(): void {

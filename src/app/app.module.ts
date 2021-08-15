@@ -10,7 +10,9 @@ import { WrapComponent } from './components/wrap/wrap/wrap.component';
 import { HomeComponent } from './components/home/home/home.component';
 import {RouterModule} from "@angular/router";
 import {routes} from "./routes/basic.routes";
-import { PaginationComponent } from './pagination/pagination/pagination.component';
+import {NgxPaginationModule} from "ngx-pagination";
+import { FilmDetailsComponent } from './components/film-details/film-details.component';
+import { HomeInfoComponent } from './components/home/home/home-info/home-info.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import { PaginationComponent } from './pagination/pagination/pagination.componen
     FilmsComponent,
     WrapComponent,
     HomeComponent,
-    PaginationComponent,
+    FilmDetailsComponent,
+    HomeInfoComponent,
 
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgxPaginationModule
   ],
   providers: [FilmService],
   bootstrap: [AppComponent]

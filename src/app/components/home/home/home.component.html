@@ -1,2 +1,6 @@
-<h2>Hello User on Our DataBase </h2>
-
+<div class="home-page">
+  <h2>Hello User on Our DataBase </h2>
+  <div class="popular-films">
+    <app-home-info *ngFor="let film of films" [film]="film"></app-home-info>
+  </div>
+</div>

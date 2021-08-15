@@ -1,8 +1,6 @@
-<div *ngIf="film" class="film-information">
+<div *ngIf="film">
   <img *ngIf="film.poster_path" src="https://image.tmdb.org/t/p/w200{{film.poster_path}}" alt="film poster">
   <h3>{{film.original_title}}</h3>
   <h4>{{film.original_language}}</h4>
   <p>{{film.vote_average}}</p>
-  <button (click)="goToTheInfo()">More about film</button>
 </div>
-<router-outlet></router-outlet>
